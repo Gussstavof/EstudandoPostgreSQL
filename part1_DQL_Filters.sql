@@ -1,0 +1,43 @@
+SELECT name, email 
+FROM users 
+WHERE name LIKE '%F';
+
+SELECT name, email 
+FROM users 
+WHERE name = 'GustavoF';
+
+SELECT name, email 
+FROM users 
+WHERE name != 'GustavoF';
+
+SELECT name, email 
+FROM users 
+WHERE name LIKE 'F%';
+
+SELECT name, birthdate 
+FROM users 
+WHERE birthdate BETWEEN '2000-01-01' AND '2004-01-01';
+
+INSERT INTO users(name)
+VALUES('ALVES');
+
+SELECT name, birthdate 
+FROM users 
+WHERE birthdate IS null;
+
+SELECT name, birthdate 
+FROM users 
+WHERE birthdate IS NOT null 
+AND name LIKE 'F%a%';
+
+SELECT name, birthdate 
+FROM users 
+WHERE birthdate IS NOT null 
+OR name LIKE 'F%a%';
+
+
+
+
+	
+
+	
