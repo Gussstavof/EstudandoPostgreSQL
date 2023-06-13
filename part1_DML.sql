@@ -6,7 +6,7 @@ VALUES
 
 SELECT * FROM users WHERE id = 1;
 
-UPDATE users SET name = 'GustavoF' WHERE id=1;
+UPDATE users SET email = 'Gustavof@gmail.com' WHERE  name = 'GustavoF';
 
 SELECT * FROM users WHERE id = 1;
 
@@ -29,6 +29,8 @@ INSERT INTO contacts
 VALUES
 	(1, 1),
 	(2, 2);
+	
+UPDATE phone_number SET phone_number=11987654327 WHERE id = 2;
 
 SELECT * FROM phone_number;
 SELECT * FROM users;
