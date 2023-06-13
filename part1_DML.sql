@@ -10,7 +10,7 @@ UPDATE users SET name = 'GustavoF' WHERE id=1;
 
 SELECT * FROM users WHERE id = 1;
 
-DELETE FROM users WHERE name LIKE 'ALVES';
+DELETE FROM users WHERE name LIKE 'Ferreira';
 
 INSERT INTO users
 	(name, email, birthdate, status)

@@ -27,6 +27,28 @@ CREATE TABLE contacts(
 	REFERENCES phone_number (id)
 );
 
+ALTER TABLE contacts
+ADD CONSTRAINT contacts_user_id_fkey
+FOREIGN KEY (user_id)
+REFERENCES users (id)
+ON DELETE CASCADE;
+
+ALTER TABLE contacts(
+	id SERIAL PRIMARY KEY,
+	
+	user_id INTEGER,
+	FOREIGN KEY (user_id) 
+	REFERENCES users (id)
+	ON DELETE CASCADE,
+	ON UPDATE CASCADE,
+	
+	phone_number_id INTEGER,
+	FOREIGN KEY (phone_number_id) 
+	REFERENCES phone_number (id)
+	ON DELETE CASCADE,
+	ON UPDATE CASCADE
+)
+
 
 SELECT * FROM users;
 SELECT * FROM phone_number;
