@@ -6,6 +6,10 @@ CREATE TABLE users(
 	status BOOLEAN
 );
 
+DROP TABLE users;
+DROP TABLE phone_number;
+DROP TABLE contacts;
+
 CREATE TABLE phone_number(
 	id SERIAL PRIMARY KEY,
 	phone_number CHAR(11)
